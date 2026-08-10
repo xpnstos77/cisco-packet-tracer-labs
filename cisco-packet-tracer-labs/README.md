@@ -1,22 +1,22 @@
-# Multilocation Restaurant Group Corp — Network Design
+# Multilocation Restaurant Group Corp — Enterprise Network Design
 
-A four-site enterprise network designed and built in **Cisco Packet Tracer** for IT 220 (Business Data Communications). The design connects two restaurant locations, a home office, and a corporate office into a single routed network using **OSPF**, with **VLAN segmentation** isolating point-of-sale traffic from staff and guest access.
+A four-site enterprise network designed and built in **Cisco Packet Tracer**, connecting two restaurant locations, a home office, and a corporate office into a single routed network over **OSPF**, with **VLAN segmentation** isolating point-of-sale traffic from staff and guest access.
 
-> **Author:** Christos Paloubis · **Course:** IT 220 — Business Data Communications · **Term:** Fall 2024
+> **Designed & built by Christos Paloubis**
 
 ---
 
 ## Overview
 
-Multilocation Restaurant Group Corp. is a fictitious hospitality company operating two restaurants plus a home office and a corporate administrative hub. The network was designed to be **scalable, segmented, and secure**, with each restaurant separating its POS network from the computers and Wi-Fi used by staff and guests. The home office provides centralized management, and the corporate office serves as the administrative core linking every site together.
+Multilocation Restaurant Group Corp. is a hospitality company operating two restaurants, a home office, and a corporate administrative hub. This network was designed to be **scalable, segmented, and secure** — each restaurant separates its POS network from the computers and Wi-Fi used by staff and guests, the home office provides centralized management, and the corporate office serves as the administrative core tying every site together.
 
-The build spans **Class A, B, and C** addressing, **static and dynamic (OSPF) routing**, **VLANs**, **wireless access**, and **subnetting** to optimize address allocation across the four LANs and three WAN links.
+The build spans **Class A, B, and C** addressing, **dynamic (OSPF) routing**, **VLANs**, **wireless access**, and **subnetting** to optimize address allocation across four LANs and three WAN links.
 
 ---
 
 ## Topology
 
-![Network Topology](screenshots/topology.png)
+![Network Topology](Christos_Paloubis_IT_Project.png)
 
 Four Cisco 2911 routers connect the sites over serial WAN links, each site anchored by a 2960-24TT switch with wired and wireless access below it.
 
@@ -76,7 +76,7 @@ Four Cisco 2911 routers connect the sites over serial WAN links, each site ancho
 
 - **OSPF dynamic routing** across all four sites for resilient, self-adjusting paths
 - **VLAN segmentation** isolating POS/payment traffic from staff and guest networks
-- **Mixed-class addressing** (A/B/C) demonstrating subnetting and address planning
+- **Mixed-class addressing** (A/B/C) demonstrating subnetting and structured address planning
 - **Wireless access** at every restaurant location for tablets and mobile devices
 - **Centralized management** through the home office, with corporate as the administrative hub
 
@@ -84,20 +84,16 @@ Four Cisco 2911 routers connect the sites over serial WAN links, each site ancho
 
 ## Repository Contents
 
-| Path | Description |
+| File | Description |
 |---|---|
-| `IT_220_Final_Project.pkt` | The Cisco Packet Tracer file — open to explore the live topology |
-| `docs/` | Project write-up, cover sheet, and abstract (PDF) |
-| `screenshots/topology.png` | Full topology diagram |
+| `Christos_Paloubis_IT_Project.pkt` | The Cisco Packet Tracer file — open to explore the live topology |
+| `Christos_Paloubis_IT_Project.pdf` | Full project write-up |
+| `Christos_Paloubis_IT_Project.png` | Topology diagram |
 
 ---
 
 ## How to Open
 
 1. Install [Cisco Packet Tracer](https://www.netacad.com/courses/packet-tracer) (free with a Cisco Networking Academy account).
-2. Download `IT_220_Final_Project.pkt` from this repo.
+2. Download `Christos_Paloubis_IT_Project.pkt`.
 3. Open it in Packet Tracer to inspect device configs, routing tables, and connectivity.
-
----
-
-*Built as the final project for IT 220 — Business Data Communications, Fall 2024.*
